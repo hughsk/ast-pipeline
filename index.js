@@ -22,6 +22,7 @@ function createPipeline(opts) {
 
     streams = streams.filter(Boolean)
 
+    if (!streams.length) return through()
     if (streams.every(isTextStream)) {
       return combine.apply(null, streams)
     }
