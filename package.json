@@ -1,7 +1,7 @@
 {
   "name": "ast-pipeline",
   "description": "Seamlessly pipe between text transform streams and AST transforms",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "index.js",
   "dependencies": {
     "stream-combiner": "0.0.4",
