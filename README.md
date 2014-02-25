@@ -38,7 +38,7 @@ module.exports = function(file, opts) {
 This is straightforward and pretty repeatable, but if you start chaining
 together multiple transforms together that work like this, you get increasing
 overhead from parsing/deparsing the JavaScript AST. In larger projects, this
-can make builds take at least 5 times longer than they would without the
+can make builds take considerably longer than they would without the
 transforms.
 
 So, `ast-pipeline` lets you pass in an array of streams as normal, but also
