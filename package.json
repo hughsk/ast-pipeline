@@ -1,0 +1,40 @@
+{
+  "name": "ast-pipeline",
+  "description": "Seamlessly pipe between text transform streams and AST transforms",
+  "version": "0.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "stream-combiner": "0.0.4",
+    "through": "^2.3.4",
+    "debug": "^0.7.4"
+  },
+  "devDependencies": {
+    "rework-variables": "git://github.com/hughsk/rework-variables#variable-fix",
+    "transformify": "^0.1.2",
+    "tape": "^2.5.0",
+    "bl": "^0.7.0",
+    "css": "^1.6.0"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughsk.io/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/ast-pipeline"
+  },
+  "bugs": {
+    "url": "https://github.com/hughsk/ast-pipeline/issues"
+  },
+  "homepage": "https://github.com/hughsk/ast-pipeline",
+  "keywords": [
+    "ast",
+    "pipeline",
+    "parse",
+    "deparse",
+    "syntax",
+    "transform",
+    "stream"
+  ]
+}
