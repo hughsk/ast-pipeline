@@ -55,9 +55,12 @@ converted to the right format as required.
 
 [![ast-pipeline](https://nodei.co/npm/ast-pipeline.png?mini=true)](https://nodei.co/npm/ast-pipeline)
 
-### `createPipeline = astPipeline()` ###
+### `createPipeline = astPipeline([opts])` ###
 
-Creates a new pipeline "factory".
+Creates a new pipeline "factory". Takes the following options:
+
+* `opts.preferAST`: expect a single AST object as both the input
+  and ouptut of these pipelines.
 
 ### `createPipeline.decode(handle)` ###
 

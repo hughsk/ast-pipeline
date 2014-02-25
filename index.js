@@ -4,9 +4,11 @@ var through = require('through')
 
 module.exports = createPipeline
 
-function createPipeline() {
+function createPipeline(opts) {
   var encode = null
   var decode = null
+
+  opts = opts || {}
 
   pipeline.encode = _encode
   pipeline.decode = _decode
@@ -114,8 +116,9 @@ function createPipeline() {
       })
     }
   }
-}
 
-function isTextStream(stream) {
-  return typeof stream !== 'function'
+  function isTextStream(stream) {
+    if (!stream) return !opts.preferAST
+    return typeof stream !== 'function'
+  }
 }
